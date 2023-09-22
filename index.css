@@ -1,979 +1,921 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
-
-/* background-color: rgba(140, 100, 185, 0.8); */
-/* background: rgba(110, 110, 109, 0.5); */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
 
 html,
 body {
-    overflow-x: hidden;
-    -webkit-overflow-x: hidden;
+  overflow-x: hidden;
+  -webkit-overflow-x: hidden;
 }
 
 .LoaderblockScroll {
-    overflow-y: hidden;
-    -webkit-overflow-y: hidden;
+  overflow-y: hidden;
+  -webkit-overflow-y: hidden;
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    width: auto;
-    max-width: 1400px;
-    transition: 0.3s;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(238, 238, 238);
-    font-family: 'Poppins', sans-serif;
-    color: rgb(57, 57, 57);
-    overflow-x: hidden;
-    -webkit-overflow-x: hidden;
+  width: auto;
+  max-width: 1400px;
+  transition: 0.3s;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(238, 238, 238);
+  font-family: "Poppins", sans-serif;
+  color: rgb(57, 57, 57);
+  overflow-x: hidden;
+  -webkit-overflow-x: hidden;
 }
 
 #title-boat {
-    position: absolute;
-    top: -2px;
-    left: 25%;
-    width: 100px;
-    min-width: fit-content;
-    margin: auto;
-    padding: 0 5px;
-    color: rgb(255, 255, 255, 0.5);
-    z-index: 5;
-    animation: changeTitleColor 1s 7s forwards;
-    -webkit-animation: changeTitleColor 1s 7s forwards;
-    -o-animation: changeTitleColor 1s 7s forwards;
-    -ms-animation: changeTitleColor 1s 7s forwards;
-    -moz-animation: changeTitleColor 1s 7s forwards;
+  position: absolute;
+  top: -2px;
+  left: 25%;
+  width: 100px;
+  min-width: fit-content;
+  margin: auto;
+  padding: 0 5px;
+  color: rgb(255, 255, 255, 0.5);
+  z-index: 5;
+  animation: changeTitleColor 1s 7s forwards;
+  -webkit-animation: changeTitleColor 1s 7s forwards;
+  -o-animation: changeTitleColor 1s 7s forwards;
+  -ms-animation: changeTitleColor 1s 7s forwards;
+  -moz-animation: changeTitleColor 1s 7s forwards;
 }
 
 #copyright {
-    position: absolute;
-    top: 35px;
-    left: 5%;
-    width: 100px;
-    min-width: fit-content;
-    margin: 0 auto;
-    padding: 0 5px;
-    z-index: 7;
-    color: rgb(255, 255, 255, 0.2);
-    animation: changeTitleColor 1s 7s forwards;
-    -webkit-animation: changeTitleColor 1s 7s forwards;
-    -o-animation: changeTitleColor 1s 7s forwards;
-    -ms-animation: changeTitleColor 1s 7s forwards;
-    -moz-animation: changeTitleColor 1s 7s forwards;
+  position: absolute;
+  top: 35px;
+  left: 5%;
+  width: 100px;
+  min-width: fit-content;
+  margin: 0 auto;
+  padding: 0 5px;
+  z-index: 7;
+  color: rgb(255, 255, 255, 0.2);
+  animation: changeTitleColor 1s 7s forwards;
+  -webkit-animation: changeTitleColor 1s 7s forwards;
+  -o-animation: changeTitleColor 1s 7s forwards;
+  -ms-animation: changeTitleColor 1s 7s forwards;
+  -moz-animation: changeTitleColor 1s 7s forwards;
 }
 
 #shanidze-zr {
-    position: absolute;
-    top: 50px;
-    left: 7%;
-    width: 100px;
-    min-width: fit-content;
-    margin: 0 auto;
-    padding: 0 5px;
-    z-index: 10;
-    color: rgb(255, 255, 255, 0.2);
-    animation: changeTitleColor 1s 7s forwards;
-    -webkit-animation: changeTitleColor 1s 7s forwards;
-    -o-animation: changeTitleColor 1s 7s forwards;
-    -ms-animation: changeTitleColor 1s 7s forwards;
-    -moz-animation: changeTitleColor 1s 7s forwards;
+  position: absolute;
+  top: 50px;
+  left: 7%;
+  width: 100px;
+  min-width: fit-content;
+  margin: 0 auto;
+  padding: 0 5px;
+  z-index: 10;
+  color: rgb(255, 255, 255, 0.2);
+  animation: changeTitleColor 1s 7s forwards;
+  -webkit-animation: changeTitleColor 1s 7s forwards;
+  -o-animation: changeTitleColor 1s 7s forwards;
+  -ms-animation: changeTitleColor 1s 7s forwards;
+  -moz-animation: changeTitleColor 1s 7s forwards;
 }
-
 
 .loader {
-    /*     position: fixed; */
-    min-width: fit-content;
-    width: 100vw;
-    min-height: fit-content;
-    height: 100vh;
-    top: 0px;
-    right: 0;
-    left: 0;
-    padding: 70px 0;
-    background: rgb(20, 20, 20);
-    background-position: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    animation: disappearPage 1s 7s forwards;
-    -webkit-animation: disappearPage 1s 7s forwards;
-    -o-animation: disappearPage 1s 7s forwards;
-    -ms-animation: disappearPage 1s 7s forwards;
-    -moz-animation: disappearPage 1s 7s forwards;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    -webkit-overflow-x: hidden;
-    -webkit-overflow-y: hidden;
-    z-index: 10;
+  min-width: fit-content;
+  width: 100vw;
+  min-height: fit-content;
+  height: 100vh;
+  top: 0px;
+  right: 0;
+  left: 0;
+  padding: 70px 0;
+  background: rgb(20, 20, 20);
+  background-position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  animation: disappearPage 1s 7s forwards;
+  -webkit-animation: disappearPage 1s 7s forwards;
+  -o-animation: disappearPage 1s 7s forwards;
+  -ms-animation: disappearPage 1s 7s forwards;
+  -moz-animation: disappearPage 1s 7s forwards;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  -webkit-overflow-x: hidden;
+  -webkit-overflow-y: hidden;
+  z-index: 10;
 }
-
 
 .number-percent-wrapper {
-    display: none;
+  display: none;
 }
 
-
 .circle {
-    display: flex;
-    min-width: 150px;
-    width: 200px;
-    min-height: 150px;
-    height: 200px;
-    margin: 10px 30px;
-    /*   background:#7ea5cc; */
-    /*   background:linear-gradient(#e66465, #9198e5); */
-    /*   background:linear-gradient(#9198e5, #e66465); */
-    /*   background:linear-gradient(#360115, #9198e5, #a12a2b); */
-    /*   background:linear-gradient(#9198e5, #170a0f, #170a0f); */
-    /*   background:linear-gradient(#80458c, #000024); */
-    /*   background:linear-gradient(#e66465, #000024); */
-    /*   background:linear-gradient(#5963cf, #f03536); */
-    background: linear-gradient(#9198e5, #140f30);
-    background: linear-gradient(#9198e5, #f03536);
-    background: linear-gradient(#5963cf, #f03536);
-    border: 7px solid rgb(61, 58, 90);
-    border-radius: 50%;
-    position: relative;
-    justify-content: center;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    -webkit-overflow-x: hidden;
-    -webkit-overflow-y: hidden;
-    z-index: 2;
+  display: flex;
+  min-width: 150px;
+  width: 200px;
+  min-height: 150px;
+  height: 200px;
+  margin: 10px 30px;
+  background: linear-gradient(#9198e5, #140f30);
+  background: linear-gradient(#9198e5, #f03536);
+  background: linear-gradient(#5963cf, #f03536);
+  border: 7px solid rgb(61, 58, 90);
+  border-radius: 50%;
+  position: relative;
+  justify-content: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  -webkit-overflow-x: hidden;
+  -webkit-overflow-y: hidden;
+  z-index: 2;
 }
 
 .curtain {
-    position: absolute;
-    width: 50%;
-    height: 50%;
-    z-index: 7;
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  z-index: 7;
 }
 
 .curtain-1 {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    /* left:50%; */
-    transform: rotateZ(-25deg) translateY(50%);
-    /* transform-origin: bottom right; */
-    background-color: #2d8fc7;
-    opacity: 1;
-    animation: curtain1 1200ms 100ms linear forwards;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transform: rotateZ(-25deg) translateY(50%);
+  background-color: #2d8fc7;
+  opacity: 1;
+  animation: curtain1 1200ms 100ms linear forwards;
 }
 
 .curtain-2 {
-    width: 100%;
-    height: 100%;
-    bottom: 0;
-    /* right: 50%; */
-    transform: rotateZ(-25deg) translateY(-50%);
-    /* transform-origin: top left; */
-    background-color: #5135f0;
-    opacity: 1;
-    animation: curtain2 1200ms 100ms linear forwards;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  transform: rotateZ(-25deg) translateY(-50%);
+  background-color: #5135f0;
+  opacity: 1;
+  animation: curtain2 1200ms 100ms linear forwards;
 }
 
-
 .circle-compass-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
 }
 
 .compass {
-    position: absolute;
+  position: absolute;
 }
 
 .compass-arrow-1 {
-    display: flex;
-    justify-content: center;
-    width: 20px;
-    height: 250px;
-    background-color: #c50404;
-    border-bottom: 70px solid #084669;
-    z-index: 1;
-    transform: rotateZ(0);
-    animation: compassArrow1 5700ms 50ms forwards;
+  display: flex;
+  justify-content: center;
+  width: 20px;
+  height: 250px;
+  background-color: #c50404;
+  border-bottom: 70px solid #084669;
+  z-index: 1;
+  transform: rotateZ(0);
+  animation: compassArrow1 5700ms 50ms forwards;
 }
 
 .compass-arrow-1::before {
-    content: "";
-    width: 14px;
-    height: 14px;
-    top: -8px;
-    /* background-color: #084669; */
-    background: #c50404;
-    position: absolute;
-    transform: rotateZ(45deg);
-    z-index: 0;
+  content: "";
+  width: 14px;
+  height: 14px;
+  top: -8px;
+  background: #c50404;
+  position: absolute;
+  transform: rotateZ(45deg);
+  z-index: 0;
 }
 
 .compass-arrow-1::after {
-    content: "";
-    width: 30px;
-    height: 30px;
-    bottom: -80px;
-    background: #084669;
-    border-radius: 10px 10px 0 0;
-    position: absolute;
-    z-index: 0;
+  content: "";
+  width: 30px;
+  height: 30px;
+  bottom: -80px;
+  background: #084669;
+  border-radius: 10px 10px 0 0;
+  position: absolute;
+  z-index: 0;
 }
 
-
-
 .compass-signs-mobile {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #959da1;
-    width: 100%;
-    height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #959da1;
+  width: 100%;
+  height: 100%;
 }
 
 .compass-layer-1-mobile {
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    background: #084669;
-    border-radius: 50%;
-    color: white;
-    display: flex;
-    justify-content: center;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: #084669;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
 }
 
 .compass-degree {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    background: transparent;
-    color: white;
-    display: flex;
-    justify-content: center;
-    --rotateDegree: 0;
-    transform: rotate(var(--rotateDegree));
-    padding: 5px;
-    font-size: 10px;
-    box-shadow: inset -7px -1px 20px rgb(41, 40, 40);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background: transparent;
+  color: white;
+  display: flex;
+  justify-content: center;
+  --rotateDegree: 0;
+  transform: rotate(var(--rotateDegree));
+  padding: 5px;
+  font-size: 10px;
+  box-shadow: inset -7px -1px 20px rgb(41, 40, 40);
 }
 
 .compass-degree-0 {
-    --rotateDegree: 0deg;
+  --rotateDegree: 0deg;
 }
 
 .compass-degree-20 {
-    --rotateDegree: 20deg;
+  --rotateDegree: 20deg;
 }
 
 .compass-degree-40 {
-    --rotateDegree: 40deg;
+  --rotateDegree: 40deg;
 }
 
 .compass-degree-60 {
-    --rotateDegree: 60deg;
+  --rotateDegree: 60deg;
 }
 
 .compass-degree-80 {
-    --rotateDegree: 80deg;
+  --rotateDegree: 80deg;
 }
 
 .compass-degree-100 {
-    --rotateDegree: 100deg;
+  --rotateDegree: 100deg;
 }
 
 .compass-degree-120 {
-    --rotateDegree: 120deg;
+  --rotateDegree: 120deg;
 }
 
 .compass-degree-140 {
-    --rotateDegree: 140deg;
+  --rotateDegree: 140deg;
 }
 
 .compass-degree-160 {
-    --rotateDegree: 160deg;
+  --rotateDegree: 160deg;
 }
 
 .compass-degree-180 {
-    --rotateDegree: 180deg;
+  --rotateDegree: 180deg;
 }
 
 .compass-degree-200 {
-    --rotateDegree: 200deg;
+  --rotateDegree: 200deg;
 }
 
 .compass-degree-220 {
-    --rotateDegree: 220deg;
+  --rotateDegree: 220deg;
 }
 
 .compass-degree-240 {
-    --rotateDegree: 240deg;
+  --rotateDegree: 240deg;
 }
 
 .compass-degree-260 {
-    --rotateDegree: 260deg;
+  --rotateDegree: 260deg;
 }
 
 .compass-degree-280 {
-    --rotateDegree: 280deg;
+  --rotateDegree: 280deg;
 }
 
 .compass-degree-300 {
-    --rotateDegree: 300deg;
+  --rotateDegree: 300deg;
 }
 
 .compass-degree-320 {
-    --rotateDegree: 320deg;
+  --rotateDegree: 320deg;
 }
 
 .compass-degree-340 {
-    --rotateDegree: 340deg;
+  --rotateDegree: 340deg;
 }
 
-
-
-
 .compass-layer-2-mobile {
-    position: absolute;
-    width: 70%;
-    height: 70%;
-    align-self: center;
-    background: #526977;
-    border-radius: 50%;
-    color: white;
-    display: flex;
-    justify-content: center;
-    z-index: 0;
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  align-self: center;
+  background: #526977;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  z-index: 0;
 }
 
 .sides {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    background: transparent;
-    color: white;
-    display: flex;
-    justify-content: center;
-    --rotateDegree: 0;
-    transform: rotate(var(--rotateDegree));
-    padding: 5px;
-    font-size: 10px;
-    letter-spacing: 1px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background: transparent;
+  color: white;
+  display: flex;
+  justify-content: center;
+  --rotateDegree: 0;
+  transform: rotate(var(--rotateDegree));
+  padding: 5px;
+  font-size: 10px;
+  letter-spacing: 1px;
 }
 
 .north {
-    --rotateDegree: 0deg;
-    font-size: 20px;
-    padding-top: 0;
+  --rotateDegree: 0deg;
+  font-size: 20px;
+  padding-top: 0;
 }
 
 .north-east {
-    --rotateDegree: 45deg;
-    padding-top: 10px;
+  --rotateDegree: 45deg;
+  padding-top: 10px;
 }
 
 .east {
-    --rotateDegree: 90deg;
-    font-size: 20px;
-    padding-top: 0;
+  --rotateDegree: 90deg;
+  font-size: 20px;
+  padding-top: 0;
 }
 
 .south-east {
-    --rotateDegree: 135deg;
-    padding-top: 10px;
+  --rotateDegree: 135deg;
+  padding-top: 10px;
 }
 
 .south {
-    --rotateDegree: 180deg;
-    font-size: 20px;
-    padding-top: 0;
+  --rotateDegree: 180deg;
+  font-size: 20px;
+  padding-top: 0;
 }
 
 .south-west {
-    --rotateDegree: 225deg;
-    padding-top: 10px;
+  --rotateDegree: 225deg;
+  padding-top: 10px;
 }
 
 .west {
-    --rotateDegree: 270deg;
-    font-size: 20px;
-    padding-top: 0;
+  --rotateDegree: 270deg;
+  font-size: 20px;
+  padding-top: 0;
 }
 
 .north-west {
-    --rotateDegree: 315deg;
-    padding-top: 10px;
+  --rotateDegree: 315deg;
+  padding-top: 10px;
 }
 
-
 .compass-layer-3-mobile {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 22%;
-    height: 22%;
-    background: rgb(24, 23, 22);
-    border-radius: 50%;
-    align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22%;
+  height: 22%;
+  background: rgb(24, 23, 22);
+  border-radius: 50%;
+  align-self: center;
 }
 
 .compass-layer-4-mobile {
-    position: relative;
-    width: 80%;
-    height: 450%;
-    align-self: center;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0;
-    animation: compassArrow2 4500ms 50ms forwards;
+  position: relative;
+  width: 80%;
+  height: 450%;
+  align-self: center;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  animation: compassArrow2 4500ms 50ms forwards;
 }
 
 .compass-arrow-1-mobile {
-    top: 0;
-    width: 100%;
-    height: 70px;
-    border-bottom: 70px solid rgb(252, 3, 3);
-    border-top: 1px solid transparent;
-    border-right: 10px solid transparent;
-    border-left: 10px solid transparent;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  border-bottom: 70px solid rgb(252, 3, 3);
+  border-top: 1px solid transparent;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
 }
 
 .compass-arrow-2-mobile {
-    bottom: 0;
-    width: 100%;
-    height: 70px;
-    border-top: 70px solid rgb(20, 3, 252);
-    border-bottom: 1px solid transparent;
-    border-right: 10px solid transparent;
-    border-left: 10px solid transparent;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  border-top: 70px solid rgb(20, 3, 252);
+  border-bottom: 1px solid transparent;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
 }
-
 
 .compass-layer-5-mobile {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background: rgb(105, 103, 100);
-    border-radius: 50%;
-    align-self: center;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: rgb(105, 103, 100);
+  border-radius: 50%;
+  align-self: center;
 }
 
-
 .progress-mobile-wrapper {
-    display: flex;
-    position: relative;
-    margin: 0px;
-    display: flex;
-    align-items: center;
-    width: 250px;
-    height: 110px;
-    background: rgb(20, 20, 20);
-    transform: translateX(-250px);
-    z-index: 0;
+  display: flex;
+  position: relative;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  width: 250px;
+  height: 110px;
+  background: rgb(20, 20, 20);
+  transform: translateX(-250px);
+  z-index: 0;
 }
 
 .progress-mobile-wrapper::before {
-    content: "";
-    display: flex;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background: rgb(20, 20, 20);
-    filter: blur(5px);
-    z-index: 2;
+  content: "";
+  display: flex;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: rgb(20, 20, 20);
+  filter: blur(5px);
+  z-index: 2;
 }
-
 
 .progress-lines-mobile-wrapper {
-    position: absolute;
-    margin: 10px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    flex-wrap: wrap;
-    width: 210px;
-    min-height: 30px;
-    height: 50px;
-    border-radius: 5px;
-    background: #1d1d1f;
-    transform: translateX(0px);
-    animation: progressLineMobileMove 500ms 50ms forwards;
-    z-index: 1;
+  position: absolute;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+  width: 210px;
+  min-height: 30px;
+  height: 50px;
+  border-radius: 5px;
+  background: #1d1d1f;
+  transform: translateX(0px);
+  animation: progressLineMobileMove 500ms 50ms forwards;
+  z-index: 1;
 }
-
-
 
 .progress-line-mobile {
-    --translation: 0;
-    position: absolute;
-    width: 10px;
-    height: 90%;
-    background: rgb(25, 25, 26);
-    border-radius: 10px;
-    box-shadow: inset -2px -2px 5px 1px rgb(17, 17, 17);
-    transform: translateX(var(--translation));
+  --translation: 0;
+  position: absolute;
+  width: 10px;
+  height: 90%;
+  background: rgb(25, 25, 26);
+  border-radius: 10px;
+  box-shadow: inset -2px -2px 5px 1px rgb(17, 17, 17);
+  transform: translateX(var(--translation));
 }
-
 
 .progress-line-mobile-1 {
-    animation: progressLineMobileTurnOn 1s 0.5s forwards,
-        progressLineMobileUnfill 700ms 4400ms forwards;
-    --translation: 10px;
-    z-index: -1;
-    border-bottom: 0px solid salmon;
+  animation: progressLineMobileTurnOn 1s 0.5s forwards,
+    progressLineMobileUnfill 700ms 4400ms forwards;
+  --translation: 10px;
+  z-index: -1;
+  border-bottom: 0px solid salmon;
 }
-
 
 .progress-line-mobile-2 {
-    --translation: 30px;
-    animation: progressLineMobileTurnOn 1s 0.7s forwards,
-        progressLineMobileUnfill 1000ms 4400ms forwards;
-    border-bottom: 0px solid salmon;
+  --translation: 30px;
+  animation: progressLineMobileTurnOn 1s 0.7s forwards,
+    progressLineMobileUnfill 1000ms 4400ms forwards;
+  border-bottom: 0px solid salmon;
 }
-
 
 .progress-line-mobile-3 {
-    --translation: 50px;
-    animation: progressLineMobileTurnOn 1s 1s forwards,
-        progressLineMobileUnfill 700ms 4400ms forwards;
-    border-bottom: 0px solid salmon;
+  --translation: 50px;
+  animation: progressLineMobileTurnOn 1s 1s forwards,
+    progressLineMobileUnfill 700ms 4400ms forwards;
+  border-bottom: 0px solid salmon;
 }
-
 
 .progress-line-mobile-4 {
-    --translation: 70px;
-    animation: progressLineMobileTurnOn 1s 1.5s forwards,
-        progressLineMobileUnfill 500ms 4400ms forwards;
-    border-bottom: 0px solid salmon;
+  --translation: 70px;
+  animation: progressLineMobileTurnOn 1s 1.5s forwards,
+    progressLineMobileUnfill 500ms 4400ms forwards;
+  border-bottom: 0px solid salmon;
 }
-
 
 .progress-line-mobile-5 {
-    --translation: 90px;
-    animation: progressLineMobileTurnOn 1s 1.7s forwards,
-        progressLineMobileUnfill 500ms 4400ms forwards;
-    border-bottom: 0px solid salmon;
+  --translation: 90px;
+  animation: progressLineMobileTurnOn 1s 1.7s forwards,
+    progressLineMobileUnfill 500ms 4400ms forwards;
+  border-bottom: 0px solid salmon;
 }
-
 
 .progress-line-mobile-6 {
-    --translation: 110px;
-    animation: progressLineMobileTurnOn 1s 2s forwards,
-        progressLineMobileUnfill 950ms 4400ms forwards;
-    border-bottom: 0px solid salmon;
+  --translation: 110px;
+  animation: progressLineMobileTurnOn 1s 2s forwards,
+    progressLineMobileUnfill 950ms 4400ms forwards;
+  border-bottom: 0px solid salmon;
 }
-
 
 .progress-line-mobile-7 {
-    --translation: 130px;
-    animation: progressLineMobileTurnOn 1s 2.2s forwards,
-        progressLineMobileUnfill 950ms 4400ms forwards;
-    border-bottom: 0px solid salmon;
+  --translation: 130px;
+  animation: progressLineMobileTurnOn 1s 2.2s forwards,
+    progressLineMobileUnfill 950ms 4400ms forwards;
+  border-bottom: 0px solid salmon;
 }
-
 
 .progress-line-mobile-8 {
-    --translation: 150px;
-    animation: progressLineMobileTurnOn 1s 2.7s forwards,
-        progressLineMobileUnfill 750ms 4400ms forwards;
-    border-bottom: 0px solid salmon;
+  --translation: 150px;
+  animation: progressLineMobileTurnOn 1s 2.7s forwards,
+    progressLineMobileUnfill 750ms 4400ms forwards;
+  border-bottom: 0px solid salmon;
 }
-
 
 .progress-line-mobile-9 {
-    --translation: 170px;
-    animation: progressLineMobileTurnOn 1s 3s forwards,
-        progressLineMobileUnfill 950ms 4400ms forwards;
-    border-bottom: 0px solid salmon;
+  --translation: 170px;
+  animation: progressLineMobileTurnOn 1s 3s forwards,
+    progressLineMobileUnfill 950ms 4400ms forwards;
+  border-bottom: 0px solid salmon;
 }
 
-
 .progress-line-mobile-10 {
-    --translation: 190px;
-    animation: progressLineMobileTurnOn 1s 3.5s forwards,
-        progressLineMobileUnfill 850ms 4400ms forwards;
-    border-bottom: 0px solid salmon;
+  --translation: 190px;
+  animation: progressLineMobileTurnOn 1s 3.5s forwards,
+    progressLineMobileUnfill 850ms 4400ms forwards;
+  border-bottom: 0px solid salmon;
 }
 
 @keyframes progressLineMobileMove {
-    0% {
-        transform: translateX(0px);
-    }
+  0% {
+    transform: translateX(0px);
+  }
 
-    100% {
-        transform: translateX(264px);
-    }
+  100% {
+    transform: translateX(264px);
+  }
 }
 
 @keyframes progressLineMobileTurnOn {
-    0% {
-        width: 10px;
-        height: 90%;
-        background: rgb(25, 25, 26);
-        border-bottom: rgb(46, 48, 49);
-        border-radius: 10px;
-        box-shadow: inset -2px -2px 5px 1px rgb(17, 17, 17);
-    }
+  0% {
+    width: 10px;
+    height: 90%;
+    background: rgb(25, 25, 26);
+    border-bottom: rgb(46, 48, 49);
+    border-radius: 10px;
+    box-shadow: inset -2px -2px 5px 1px rgb(17, 17, 17);
+  }
 
-    100% {
-        background: rgb(0, 160, 252);
-        border-bottom: 5px solid rgb(0, 160, 252);
-        border-radius: 10px;
-        box-shadow: 0px 0px 20px 1px rgb(0, 160, 252);
-    }
+  100% {
+    background: rgb(0, 160, 252);
+    border-bottom: 5px solid rgb(0, 160, 252);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 1px rgb(0, 160, 252);
+  }
 }
 
 @keyframes progressLineMobileUnfill {
-    0% {
-        background: rgb(0, 160, 252);
-        box-shadow: none;
-        border-bottom: 50px solid salmon;
-    }
+  0% {
+    background: rgb(0, 160, 252);
+    box-shadow: none;
+    border-bottom: 50px solid salmon;
+  }
 
-    40% {
-        background: rgb(25, 25, 26);
-        box-shadow: none;
-        border-bottom: 30px solid rgb(241, 71, 52);
-    }
+  40% {
+    background: rgb(25, 25, 26);
+    box-shadow: none;
+    border-bottom: 30px solid rgb(241, 71, 52);
+  }
 
-    100% {
-        background: rgb(25, 25, 26);
-        box-shadow: inset -2px -2px 5px 1px rgb(17, 17, 17);
-        border-bottom: 0px solid rgb(255, 25, 0);
-    }
+  100% {
+    background: rgb(25, 25, 26);
+    box-shadow: inset -2px -2px 5px 1px rgb(17, 17, 17);
+    border-bottom: 0px solid rgb(255, 25, 0);
+  }
 }
-
 
 .progress-text-mobile {
-    margin: 10px 0px;
-    /* display: flex; */
-    justify-content: flex-start;
-    align-items: center;
-    position: relative;
-    width: 205px;
-    height: 45px;
-    border-radius: 5px;
-    background: #1f08a3;
-    box-shadow: 0px 0px 20px 1px rgb(0, 160, 252);
-    animation: progressTextMobile 800ms 4400ms linear forwards;
+  margin: 10px 0px;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  width: 205px;
+  height: 45px;
+  border-radius: 5px;
+  background: #1f08a3;
+  box-shadow: 0px 0px 20px 1px rgb(0, 160, 252);
+  animation: progressTextMobile 800ms 4400ms linear forwards;
 }
 
-
-
 .progress-text-mobile::before {
-    content: "Loading";
-    font-size: 20px;
-    color: rgb(0, 160, 252);
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 210px;
-    height: 50px;
-    border-radius: 5px;
-    background: #202022;
-    z-index: 1;
-    animation: progressTextMobileBefore 800ms 4500ms forwards;
+  content: "Loading";
+  font-size: 20px;
+  color: rgb(0, 160, 252);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 210px;
+  height: 50px;
+  border-radius: 5px;
+  background: #202022;
+  z-index: 1;
+  animation: progressTextMobileBefore 800ms 4500ms forwards;
 }
 
 .progress-text-mobile::after {
-    content: "Done";
-    font-size: 20px;
-    color: rgb(0, 160, 252);
-    position: absolute;
-    top: -50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 210px;
-    height: 50px;
-    border-radius: 5px;
-    background: #202022;
-    z-index: 0;
-    animation: progressTextMobileAfter 800ms 4500ms forwards;
+  content: "Done";
+  font-size: 20px;
+  color: rgb(0, 160, 252);
+  position: absolute;
+  top: -50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 210px;
+  height: 50px;
+  border-radius: 5px;
+  background: #202022;
+  z-index: 0;
+  animation: progressTextMobileAfter 800ms 4500ms forwards;
 }
 
 .progress-text-line-mobile {
-    --translation: 0;
-    position: absolute;
-    top: 5px;
-    width: 10px;
-    height: 90%;
-    background: rgb(0, 160, 252);
-    border-bottom: rgb(0, 160, 252);
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px 5px rgb(0, 160, 252);
-    transform: translateX(var(--translation));
-    animation: progressTextLineMobile 800ms 4400ms forwards;
+  --translation: 0;
+  position: absolute;
+  top: 5px;
+  width: 10px;
+  height: 90%;
+  background: rgb(0, 160, 252);
+  border-bottom: rgb(0, 160, 252);
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 5px rgb(0, 160, 252);
+  transform: translateX(var(--translation));
+  animation: progressTextLineMobile 800ms 4400ms forwards;
 }
 
 .progress-text-mobile-blue {
-    margin: 0 10px;
-    position: absolute;
-    z-index: 1;
-    animation: progressTextMobileBlue 800ms 0s linear infinite,
-        progressTextMobileBlueDissaper 800ms 4400ms forwards;
+  margin: 0 10px;
+  position: absolute;
+  z-index: 1;
+  animation: progressTextMobileBlue 800ms 0s linear infinite,
+    progressTextMobileBlueDissaper 800ms 4400ms forwards;
 }
 
 .progress-text-mobile-green {
-    margin: 0 10px;
-    right: 0px;
-    position: absolute;
-    opacity: 0;
-    animation: progressTextMobileGreen 800ms 4500ms forwards;
+  margin: 0 10px;
+  right: 0px;
+  position: absolute;
+  opacity: 0;
+  animation: progressTextMobileGreen 800ms 4500ms forwards;
 }
 
-
 @keyframes progressTextMobileBlue {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    50% {
-        opacity: 1
-    }
+  50% {
+    opacity: 1;
+  }
 
-    100% {
-        opacity: 0;
-    }
+  100% {
+    opacity: 0;
+  }
 }
 
 @keyframes progressTextMobileBlueDissaper {
-    0% {
-        opacity: 0;
-        z-index: -1;
-    }
+  0% {
+    opacity: 0;
+    z-index: -1;
+  }
 
-    100% {
-        opacity: 0;
-        z-index: -1;
-    }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
 }
 
-
-
-
 @keyframes progressTextMobileGreen {
-    0% {
-        opacity: 0;
-        background: rgb(12, 238, 87);
-        border-bottom: rgb(11, 189, 70);
-        border-radius: 10px;
-        box-shadow: 0px 0px 50px 5px rgb(11, 189, 70);
-        z-index: 2;
-    }
+  0% {
+    opacity: 0;
+    background: rgb(12, 238, 87);
+    border-bottom: rgb(11, 189, 70);
+    border-radius: 10px;
+    box-shadow: 0px 0px 50px 5px rgb(11, 189, 70);
+    z-index: 2;
+  }
 
-    100% {
-        opacity: 1;
-        z-index: 2;
-        background: rgb(12, 238, 87);
-        border-bottom: rgb(12, 238, 87);
-        ;
-        border-radius: 10px;
-        box-shadow: 0px 0px 50px 5px rgb(12, 238, 87);
-    }
+  100% {
+    opacity: 1;
+    z-index: 2;
+    background: rgb(12, 238, 87);
+    border-bottom: rgb(12, 238, 87);
+    border-radius: 10px;
+    box-shadow: 0px 0px 50px 5px rgb(12, 238, 87);
+  }
 }
 
 @keyframes progressTextMobile {
-    0% {
-        box-shadow: 0px 0px 20px 5px rgb(12, 238, 87);
-    }
+  0% {
+    box-shadow: 0px 0px 20px 5px rgb(12, 238, 87);
+  }
 
-    100% {
-        box-shadow: 0px 0px 20px 5px rgb(12, 238, 87);
-    }
+  100% {
+    box-shadow: 0px 0px 20px 5px rgb(12, 238, 87);
+  }
 }
 
 @keyframes progressTextMobileBefore {
-    0% {
-        z-index: -1;
-        color: rgb(11, 192, 72);
-    }
+  0% {
+    z-index: -1;
+    color: rgb(11, 192, 72);
+  }
 
-    100% {
-        z-index: -1;
-        color: rgb(11, 192, 72);
-    }
+  100% {
+    z-index: -1;
+    color: rgb(11, 192, 72);
+  }
 }
 
 @keyframes progressTextMobileAfter {
-    0% {
-        z-index: 1;
-        color: rgb(11, 192, 72);
-    }
+  0% {
+    z-index: 1;
+    color: rgb(11, 192, 72);
+  }
 
-    100% {
-        z-index: 1;
-        color: rgb(11, 192, 72);
-    }
+  100% {
+    z-index: 1;
+    color: rgb(11, 192, 72);
+  }
 }
 
-
-
-
-
-
 @keyframes compassArrow1 {
-    0% {
-        transform: rotateZ(0);
-    }
+  0% {
+    transform: rotateZ(0);
+  }
 
-    68% {
-        transform: rotateZ(15deg);
-    }
+  68% {
+    transform: rotateZ(15deg);
+  }
 
-    73% {
-        transform: rotateZ(160deg);
-    }
+  73% {
+    transform: rotateZ(160deg);
+  }
 
-    78% {
-        transform: rotateZ(140deg);
-    }
+  78% {
+    transform: rotateZ(140deg);
+  }
 
-    80% {
-        transform: rotateZ(145deg);
-    }
+  80% {
+    transform: rotateZ(145deg);
+  }
 
-    83% {
-        transform: rotateZ(147deg);
-    }
+  83% {
+    transform: rotateZ(147deg);
+  }
 
-    100% {
-        transform: rotateZ(145deg);
-    }
+  100% {
+    transform: rotateZ(145deg);
+  }
 }
 
 @keyframes compassArrow2 {
-    0% {
-        transform: rotateZ(45deg);
-    }
+  0% {
+    transform: rotateZ(45deg);
+  }
 
-    10% {
-        transform: rotateZ(-15deg);
-    }
+  10% {
+    transform: rotateZ(-15deg);
+  }
 
-    20% {
-        transform: rotateZ(-5deg);
-    }
+  20% {
+    transform: rotateZ(-5deg);
+  }
 
-    30% {
-        transform: rotateZ(420deg);
-    }
+  30% {
+    transform: rotateZ(420deg);
+  }
 
-    55% {
-        transform: rotateZ(220deg);
-    }
+  55% {
+    transform: rotateZ(220deg);
+  }
 
-    65% {
-        transform: rotateZ(410deg);
-    }
+  65% {
+    transform: rotateZ(410deg);
+  }
 
-    75% {
-        transform: rotateZ(390deg);
-    }
+  75% {
+    transform: rotateZ(390deg);
+  }
 
-    100% {
-        transform: rotateZ(405deg);
-    }
+  100% {
+    transform: rotateZ(405deg);
+  }
 }
 
-
 @keyframes curtain1 {
-    0% {
-        transform: rotateZ(-25deg) translateY(50%);
-    }
+  0% {
+    transform: rotateZ(-25deg) translateY(50%);
+  }
 
-    25% {
-        transform: rotateZ(0deg) translateY(-50%);
-        opacity: 1;
-    }
+  25% {
+    transform: rotateZ(0deg) translateY(-50%);
+    opacity: 1;
+  }
 
-    50% {
-        transform: rotateZ(45deg) translateY(-50%);
-        opacity: 1;
-    }
+  50% {
+    transform: rotateZ(45deg) translateY(-50%);
+    opacity: 1;
+  }
 
-    75% {
-        transform: rotateZ(-25deg)translateY(-50%);
-        opacity: 1;
-    }
+  75% {
+    transform: rotateZ(-25deg) translateY(-50%);
+    opacity: 1;
+  }
 
-    100% {
-        transform: rotateZ(-25deg)translateY(-100%);
-    }
+  100% {
+    transform: rotateZ(-25deg) translateY(-100%);
+  }
 }
 
 @keyframes curtain2 {
-    0% {
-        transform: rotateZ(-25deg) translateY(-50%);
-        opacity: 0.7;
-    }
+  0% {
+    transform: rotateZ(-25deg) translateY(-50%);
+    opacity: 0.7;
+  }
 
-    25% {
-        transform: rotateZ(0deg) translateY(50%);
-        opacity: 1;
-    }
+  25% {
+    transform: rotateZ(0deg) translateY(50%);
+    opacity: 1;
+  }
 
-    50% {
-        transform: rotateZ(45deg)translateY(50%);
-        opacity: 1;
-    }
+  50% {
+    transform: rotateZ(45deg) translateY(50%);
+    opacity: 1;
+  }
 
-    75% {
-        transform: rotateZ(-25deg)translateY(50%);
-        opacity: 1;
-    }
+  75% {
+    transform: rotateZ(-25deg) translateY(50%);
+    opacity: 1;
+  }
 
-    100% {
-        transform: rotateZ(-25deg) translateY(100%);
-    }
+  100% {
+    transform: rotateZ(-25deg) translateY(100%);
+  }
 }
 
-
 @keyframes disappearPage {
-    0% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 1;
+  }
 
-    100% {
-        opacity: 0;
-        display: none;
-        z-index: -1;
-    }
+  100% {
+    opacity: 0;
+    display: none;
+    z-index: -1;
+  }
 }
 
 @keyframes changeTitleColor {
-    0% {
-        position: relative;
-        top: 0;
-        left: 0;
-        color: rgb(20, 20, 20, 0.1);
-    }
+  0% {
+    position: relative;
+    top: 0;
+    left: 0;
+    color: rgb(20, 20, 20, 0.1);
+  }
 
-    100% {
-        position: relative;
-        top: 250px;
-        left: 0;
-        color: rgb(20, 20, 20, 0.85);
-    }
+  100% {
+    position: relative;
+    top: 250px;
+    left: 0;
+    color: rgb(20, 20, 20, 0.85);
+  }
 }
